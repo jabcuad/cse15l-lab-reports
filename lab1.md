@@ -16,7 +16,7 @@ lecture1
 ```
 The working directory is /home
 
-I got lecture1 because lecture1 is the directory under the root directory.
+I got lecture1 because lecture1 is the directory under the current working directory /home.
 
 It's not an error.
 
@@ -24,7 +24,9 @@ It's not an error.
 ```
 [user@sahara ~]$ cat
 ```
-I got no output because
+The working directory was /home.
+
+I got no output because I didn't put any argument behind the command cat so it's waiting for an input.
 
 It's not an error.
 
@@ -44,23 +46,42 @@ It's not an error.
 [user@sahara ~/lecture1]$ ls messages
 en-us.txt  es-mx.txt  fr.txt  zh-cn.txt
 ``
+The working directory was /home/lecture1
+
+I got this output because the files shown in the ouput are files under the argument messages which is under the current working directory.
+
+It's not an error.
 
 6.cat with path to directory
 ``
 [user@sahara ~/lecture1]$ cat messages
 cat: messages: Is a directory
 ``
+The current working directory was /home/lecture1
+
+I got this output because cat is supposed to print the contents of files but the argument is a directory.
+
+It's an error, cat is supposed to have arguments of files instead of directory.
+
 7.cd with path to file
 ``
 [user@sahara ~/lecture1]$ cd Hello.java
 bash: cd: Hello.java: Not a directory
 ``
+The working directory was /home/lecture1
+
+I got this output because Hello.java is a file and it's not a directory, thus it cannot be an argument for cd, and an error is reported.
+
+It's an error, cd is supposed to have arguments of directory, but Hello.java is file.
 
 8.ls with path to file
 ``
 [user@sahara ~/lecture1]$ ls Hello.java
 Hello.java
 ``
+The working directory was /home/lecture1.
+
+I got this output because Hello.java is itself a file so there's no file or directory under it, thus the command list prints argument itself.
 
 9.cat with path to file
 ``
@@ -80,3 +101,8 @@ public class Hello {
     System.out.println(content);
   }
 ``
+The working directory was /home/lecture1
+
+I got this output because cat command printed the contents in the file Hello.java.
+
+It's not an error.
