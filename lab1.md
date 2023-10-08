@@ -21,6 +21,7 @@ I got lecture1 because lecture1 is the directory under the current working direc
 It's not an error.
 
 3.cat with no argument
+
 ```
 [user@sahara ~]$ cat
 ```
