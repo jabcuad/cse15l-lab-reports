@@ -95,6 +95,8 @@ The working directory was /home/lecture1.
 
 I got this output because Hello.java is itself a file so there's no file or directory under it, thus the command list prints argument itself.
 
+It's not an error.
+
 9.cat with path to file
 
 ```
