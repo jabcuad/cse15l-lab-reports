@@ -12,7 +12,8 @@ It's not an error.
 2.ls with no argument
 
 ```
-[user@sahara ~]$ ls lecture1
+[user@sahara ~]$ ls
+lecture1
 ```
 The working directory is /home
 
