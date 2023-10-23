@@ -43,7 +43,7 @@ By this request, word becomes "Hello", the result changes from null to "1. Hello
 
 screenshot of ```/add-message?s=How are you```
 
-![image](how are you.png)
+![image](howareyou.png)
 
 The method called is ```public String handleRequest(URI url)```
 
