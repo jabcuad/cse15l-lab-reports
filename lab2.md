@@ -31,15 +31,23 @@ class StringServer {
 }
 ```
 screenshot of ```/add-message?s=Hello```
+
 ![image](hello.png)
+
 The method that is called is ```public String handleRequest(URI url)```.
+
 The relevant argument is the URI https://0-0-0-0-4000-5h2er339t5f5n08gk91s0cdl5s.us.edusercontent.com/add-message?s=Hello, relevant values are String result, int num, and String word. 
+
 By this request, word becomes "Hello", the result changes from null to "1. Hello", and then num goes from 1 to 2.
 
 screenshot of ```/add-message?s=How are you```
+
 ![images](how are you.png)
+
 The method called is ```public String handleRequest(URI url)```
+
 The relevant argument is the URI https://0-0-0-0-4000-5h2er339t5f5n08gk91s0cdl5s.us.edusercontent.com/add-message?s=How are you. Relevant values are String result, int num, and String word.
+
 By this request, word becomes "How are you", result changes from "1. Hello" to "1. Hello \n 2. How are you", and the num goes from 2 to 3.
 
 Part 2
