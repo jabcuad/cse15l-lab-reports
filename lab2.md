@@ -53,9 +53,15 @@ By this request, word becomes "How are you", result changes from "1. Hello" to "
 
 Part 2
 
-![image](path.png)
+path to private key:
 
-As shown in the image above, the path to private key is ~/.ssh/id_rsa, and the path to public key is ~/.ssh/id_rsa.pub
+![image](privatekey.png)
+
+path to public key:
+
+
+![image](publickeys.png)
+
 login without password:
 
 ![image](login.jpg)
