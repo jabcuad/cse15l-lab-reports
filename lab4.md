@@ -37,4 +37,6 @@ static int[] reversed(int[] arr) {
   }
 ```
 
-The fix addresses the issue because the issue was that the original code makes the index of input array be the element of reversing index array of the new established empty array
+The fix addresses the issue because for the original code, the code changed elements on the index of the input array to the elements on the reversed index of the newly established array, which has empty elements in all indexes. By changing the code and making the element on index of newly established array change to elements on the reversed index of the input array, and return the new array, we can achieve the intended goal of the code.
+
+Part 2.
