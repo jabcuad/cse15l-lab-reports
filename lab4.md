@@ -254,3 +254,34 @@ $ grep -w "an"  technical/plos/pmed.0020203.txt
 ```
 
 The command-line option ```grep -w``` prints out lines that specifically contain the input word and avoid viewing the input as a string that can be the substring of another word. For example ```grep -w "a"``` will only prints lines that contain the word "a", but ```grep "a"``` will prints lines that not only contain the word "a" but also lines that contain words that have "a" in them. It's useful when we want to look for lines in a file that specifically contain a word and do not want to include words that are not identical to the target word but the target word is a substring of those words.
+
+How I found these four command-line options is through chatgpt, my input to chatgpt is : what are some grep command-line option. The output of chatGPT is:
+`grep` is a powerful command-line tool for searching text patterns in files. It comes with various command-line options that allow you to customize your search. Here are some common `grep` command-line options:
+
+1. `-i` (or `--ignore-case`): This option makes the search case-insensitive, so it will match both uppercase and lowercase characters.
+
+2. `-v` (or `--invert-match`): Inverts the match, meaning it will select lines that do not match the specified pattern.
+
+3. `-r` (or `--recursive`): Recursively searches for patterns in directories and subdirectories.
+
+4. `-l` (or `--files-with-matches`): Only lists the names of files that contain matching lines, without displaying the actual matched lines.
+
+5. `-c` (or `--count`): Displays the count of matching lines in each file, rather than the actual lines.
+
+6. `-n` (or `--line-number`): Shows line numbers for matching lines.
+
+7. `-w` (or `--word-regexp`): Matches the whole word, ensuring that the pattern is not a substring of a larger word.
+
+8. `-A` (or `--after-context`): Shows lines after the matching line in the output. You can specify the number of lines to display with this option.
+
+9. `-B` (or `--before-context`): Shows lines before the matching line in the output. You can specify the number of lines to display with this option.
+
+10. `-C` (or `--context`): Displays lines both before and after the matching line in the output. You can specify the number of lines for context with this option.
+
+11. `-e` (or `--regexp`): Allows you to specify multiple patterns to search for in a single `grep` command.
+
+12. `-f` (or `--file`): Reads patterns from a file and searches for all of them in the input.
+
+13. `-q` (or `--quiet` or `--silent`): Suppresses output and is commonly used to check if a pattern exists in a file without displaying the results.
+
+These are just some of the most commonly used `grep` options. You can use a combination of these options to tailor your search to your specific requirements. You can also refer to the `grep` man page (`man grep`) for a full list of options and their descriptions.
