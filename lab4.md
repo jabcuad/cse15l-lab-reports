@@ -53,7 +53,7 @@ $ grep -c "base pairs"  technical/plos/pmed.0020203.txt
 0
 ```
 
-command-option ```grep -c``` counts number of lines that contain the input word in a file. It's useful since sometimes we don't need to know the specific lines in a file that contain certain words and we just want to know how many lines are there that contain such word, the ```-c``` will give us this useful information with fewer output in terminal compared to ```grep``` without ```-c```.
+command-option ```grep -c``` counts number of lines that contain the input word in a file. It's useful since sometimes we don't need to know the specific lines in a file that contain certain words and we just want to know how many lines are there that contain such word, the ```-c``` will give us this useful information with simpler output in terminal compared to ```grep``` without ```-c```.
 
 The second command-line option is ```-v```.
 
@@ -166,4 +166,91 @@ $ grep -n "base pairs"  technical/plos/journal.pbio.0020190.txt
 
 2nd example:
 ```
+$ grep -n "base pairs"  technical/biomed/rr196.txt
+200:          approximately 500 base pairs upstream of the stop codon,
+```
 
+The command ```grep -n``` not only prints out the line that contains the input word but also shows the line number of that line in a file. It's useful when we want to know the exact position of the line that contains the word in a file.
+
+The forth command-line option is ```-w```
+
+1st example:
+```
+$ grep -w "a"  technical/biomed/rr196.txt
+        fiber shortening with a corresponding shift in the
+        of emphysematous hamsters, an increase in IIa fibers and a
+        than hamster, and with the availability of a
+        elastase-induced emphysema as a model in which the
+          emphysema induction by a single intratracheal
+          volume of saline without a mortality.
+          Each strip was mounted horizontally in a bath of
+          1°C. One end of the strip was tied to a fixed post with
+          tendon at the other end was fixed to the arm of a
+          a movable platform with a single tie. Platinum electrodes
+          strip on either side. The muscles were stimulated with a
+          developed in our laboratory. A Pentium computer with a
+          cannulated with a 16 g intravenous catheter (Angiocath;
+          established, and the lung was inflated to a distending
+          at a wavelength of 260 nm. mRNA (150 ng) was reverse
+          single 5' oligonucleotide common primer, designed from a
+          oligonucleotide primer, designed from a divergent portion
+          target sequences. However, this control template yields a
+          The PCR was performed in a 50 μl total reaction
+          performed in a thermal cycler with an initial denaturing
+          60°C, 50 seconds at 70°C, and a final step of 3 minutes
+          amplified signal was on the linear portion of a
+          semilogarithmic plot of the yield expressed as a function
+          total sample was then calculated from the fraction of a
+          MHC mRNA isoforms in a given sample [ 19 ] . We performed
+          with a rabbit anti-rat laminin primary antibody (Sigma,
+          St Louis, Missouri) at a dilution of 1:2500, followed by
+          a fluorescein-conjugated sheep anti-rabbit IgG secondary
+          antibodies were used. For BF-F3 we used a primary
+          antibody dilution of 1:50, an 18 hour incubation, and a
+          antibody. For BF-35 we used a primary antibody dilution
+          of 1:10, a 24 hour incubation, and a goat anti-mouse IgG
+          Data are reported as means ± SE. We used a
+          repeated-measures analysis of variance with a Huynh-Feldt
+          We noted a group-by-type interaction and then performed 
+          was a significant decrease in the expression of MHC IIb
+          isoform, all demonstrated a trend to greater expression
+          had a significantly lower percentage of fibers classified
+          as IIb and a trend toward increased numbers of IIx and
+          Figure 2shows a typical panel from serial sections of one
+          strongly correlated with a shift to slower MHC isoforms
+          with a
+          emphysematous diaphragm was less fatiguable with a
+        ] : that is, they too are manifested as a shift toward
+        recently could a change in fiber type distribution be
+        hamster diaphragm has demonstrated a change in twitch
+        Intratracheal instillation of elastase in rats creates a
+        results in relation to Kanbara's would be that there was a
+        3 7 ] . Only in one recent paper was a shift in MHC in
+        We demonstrate here a shift from IIb toward IIx in
+        levels. Although this shift toward a slower isoform is not
+        adaptations have a chance to occur, the greater compliance
+        been suggested by others, at least in part a function of
+        MHC isoforms [ 29 38 ] . Although one paper has shown a
+        fibers [ 38 ] , and another has shown only a significant
+        decrease in type IIb fibers [ 39 ] , a third paper reported
+        a surprising increase in type IIb fibers [ 40 ] .
+        a pure increase in the workload on the muscle.
+        In addition to being the first demonstration of a
+        demonstrate that such a shift toward slower isoforms in
+        emphysema has a significant physiologic impact on
+        a shift only between the fast isoforms but away from IIb
+        whole muscles, a slower maximum velocity of shortening in
+        et al. [ 48 ] have shown a major
+        responsible for a significant fraction of energy
+        In sum, we have demonstrated a significant decrease in
+        in vitro , including a longer time to
+        peak tension and a greater resistance to fatigue in
+```
+
+2nd example:
+```
+$ grep -w "an"  technical/plos/pmed.0020203.txt
+        studies are an important part of medical research, but which ones, if any, belong in a
+```
+
+The command ```grep -w``` prints out lines that specifically 
