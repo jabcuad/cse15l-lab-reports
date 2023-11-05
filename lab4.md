@@ -53,7 +53,7 @@ $ grep -c "base pairs"  technical/plos/pmed.0020203.txt
 0
 ```
 
-command-option ```grep -c``` counts number of lines that contain the input word in a file. It's useful since sometimes we don't need to know the specific lines in a file that contain certain words and we just want to know how many lines are there that contain such word, the ```-c``` will give us this useful information with simpler output in terminal compared to ```grep``` without ```-c```.
+command-option ```grep -c``` counts number of lines that contain the input string in a file. It's useful since sometimes we don't need to know the specific lines in a file that contain certain strings and we just want to know how many lines are there that contain such string, the ```-c``` will give us this useful information with simpler output in terminal compared to ```grep``` without ```-c```.
 
 The second command-line option is ```-v```.
 
@@ -153,7 +153,7 @@ $ grep -v "the" technical/plos/journal.pbio.0020190.txt
 
 ```
 
-The command ```grep -v``` prints lines that do not contain the input word in the terminal. It's useful when we don't want to look for lines that contain certain words but lines that do not contain the words in a file.
+The command ```grep -v``` prints lines that do not contain the input string in the terminal. It's useful when we don't want to look for lines that contain certain strings but lines that do not contain the strings in a file.
 
 The third command-line option is "-n":
 
@@ -170,7 +170,7 @@ $ grep -n "base pairs"  technical/biomed/rr196.txt
 200:          approximately 500 base pairs upstream of the stop codon,
 ```
 
-The command ```grep -n``` not only prints out the line that contains the input word but also shows the line number of that line in a file. It's useful when we want to know the exact position of the line that contains the word in a file.
+The command ```grep -n``` not only prints out the line that contains the input string but also shows the line number of that line in a file. It's useful when we want to know the exact position of the line that contains the string in a file.
 
 The forth command-line option is ```-w```
 
@@ -253,4 +253,4 @@ $ grep -w "an"  technical/plos/pmed.0020203.txt
         studies are an important part of medical research, but which ones, if any, belong in a
 ```
 
-The command ```grep -w``` prints out lines that specifically 
+The command-line option ```grep -w``` prints out lines that specifically contain the input word and avoid viewing the input as a string that can be the substring of another word. For example ```grep -w "a"``` will only prints lines that contain the word "a", but ```grep "a"``` will prints lines that not only contain the word "a" but also lines that contain words that have "a" in them. It's useful when we want to look for lines in a file that specifically contain a word and do not want to include words that are not identical to the target word but the target word is a substring of those words.
