@@ -13,6 +13,7 @@ Keys I pressed are ```javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar
 step7:
 ![image](step7.png)
 Keys I pressed are ```vim ListExamples.java <enter>``` Then in vim mode I typed ```:44<enter>dwiindex2<esc>:wq<enter>``` Command I ran first started vim, then edit in vim and quit. The keypresses to enter vim are characters that I typed out for command, the ```:44``` keypress allowed me to go to line 44, the ```dw``` allowed me to delete ```index1``` and ```iindex2```allowed me to go to edit mode and put word ```index2``` in the code, then I typed ```<esc>``` to go out of edit mode and ```:wq``` to save and quit vim.
+
 java file after change:
 ![image](change.png)
 
