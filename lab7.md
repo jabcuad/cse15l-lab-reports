@@ -1,17 +1,22 @@
 Part 1
 
 1.
-Question about
-Hi, I am a student working on the code, I tried the code I put above but it showed that when I try input . I think the bug is at the class but I'm not sure which line exactly went wrong. Thanks!
+Question about ///merge/// method code
 
-2.
+Hi, I am working on the method ///merge/// for my week 7 lab, I tried the test for the method but it showed that it didn't pass test2. I think the bug is at somewhere in the method ///merge/// but I'm not sure what exactly went wrong. Thanks!
+Here's my terminal output that showed failure:
+
+Here's my merge method:
+
+Here's the code for second test:
+
 
 Hi, the class is meant to , what would you do to ?
 
-3. 
+2. 
 After seeing the suggestion, the student decided to 
 
-4.
+3.
 File and directory structure:
 
 contents of each file before fixing bug:
