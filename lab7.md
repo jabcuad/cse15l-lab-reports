@@ -4,19 +4,30 @@ Part 1
 Question about ///merge/// method code
 
 Hi, I am working on the method ///merge/// for my week 7 lab, I tried the test for the method but it showed that it didn't pass test2. I think the bug is at somewhere in the method ///merge/// but I'm not sure what exactly went wrong. Thanks!
-Here's my terminal output that showed failure:
+
+Here's my terminal output that showed failure(my bug symptom):
+![image](error1.png)
 
 Here's my merge method:
+![image](error2.png)
 
-Here's the code for second test:
+Here's the code for my second ///merge/// test:
+![image](error3.png)
 
+2.
 
-Hi, the class is meant to , what would you do to ?
-
-2. 
-After seeing the suggestion, the student decided to 
+Hi, double check on what the second test for ///merge/// is expecting. What output do we want if there are common letters in both lists?
 
 3.
+
+After seeing the response, the student noticed that when there are common letter in both lists, the letter should appear twice in the result list. Thus the student figured out that they should not increase both ///index1/// and ///index2/// when the values at these two indexes are equal, and they can combine ///</// case with the equal case since both only require ///index2/// to increase by 1.
+
+Student changed the code for merge to:
+![image](fixed1.png)
+
+now the terminal shows:
+![image](fixed2.png)
+
 File and directory structure:
 
 contents of each file before fixing bug:
