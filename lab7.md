@@ -16,11 +16,11 @@ Here's the code for my second ```merge``` test:
 
 2.
 
-Hi, double check on what the second test for ```merge``` is expecting. What output do we want if there are common letters in both lists?
+Hi, try to track your index numbers in the while loop, also double check on what the second test for ```merge``` is expecting. What output do we want if there are common letters in both lists?
 
 3.
 
-After seeing the response, the student noticed that when there are common letter in both lists, the letter should appear twice in the result list. Thus the student figured out that they should not increase both ```index1``` and ```index2``` when the values at these two indexes are equal, and they can combine ```<``` case with the equal case since both only require ```index2``` to increase by 1.
+After seeing the response, the student found out that they didn't increase ```index2``` number when needed, at the same time, they noticed that when there are common letter in both lists, the letter should appear twice in the result list. Thus the student figured out that they should not increase both ```index1``` and ```index2``` when the values at these two indexes are equal, and they can combine ```<``` case with the equal case since both only require ```index2``` to increase by 1.
 
 Student changed the code for merge to:
 ![image](fixed.png)
@@ -42,7 +42,7 @@ full command line that triggered the bug:
 ![image](error1.png)
 
 Description of what to edit to fix the bug:
-first delete the ```else if``` statement, then change the contents inside the ```if``` statement to only increase ```index2``` instead of increasing both ```index1``` and ```index2```, these actions combined case when the lists reach values that are equal or reach values where value from ```index2``` should be put in the list as it should be sorted before the value currently from ```index1```.
+first delete the ```else if``` statement, then change the contents inside the ```else``` statement to increase ```index2``` by 1 instead of the messed up index increment before, these actions allowed ```index2``` to increase as wanted and combined case when the lists reach values that are equal or reach values where value from ```index2``` should be put in the list as it should be sorted before the value currently from ```index1```.
 
 Part 2
 
