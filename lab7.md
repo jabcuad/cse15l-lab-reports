@@ -34,16 +34,20 @@ File and directory structure:
 contents of each file before fixing bug:
 
 ```.gitgnore```:
+
 ![image](g.png)
 
 ```ListExamples.java```:
+
 ![image](list1.png)
 ![image](list2.png)
 
 ```ListExamplesTests.java```":
+
 ![image](test.png)
 
 ```test.sh```:
+
 ![image](bash.png)
 
 full command line that triggered the bug:
